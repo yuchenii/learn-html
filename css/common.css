@@ -1,0 +1,325 @@
+/* 版心公共类 */
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* -------------------快捷菜单模块：xtx-shortcut */
+.xtx-shortcut {
+    height: 52px;
+    background-color: #333333;
+}
+
+.xtx-shortcut .container {
+    height: 52px;
+    /* background-color: skyblue; */
+}
+
+.xtx-shortcut ul li {
+    float: left;
+    line-height: 52px;
+    color: #666666
+}
+
+.xtx-shortcut ul li a {
+    margin: 0 16px;
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+.xtx-shortcut ul li:last-child a {
+    margin-right: 0;
+}
+
+.xtx-shortcut ul li:last-child a::before {
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 16px;
+    margin-top: -3px;
+    margin-right: 8px;
+    /* background-color: red; */
+    background: url('../images/sprites.png') -160px -70px;
+    vertical-align: middle;
+
+}
+
+
+
+/* ------------------------主导航模块：xtx-main-nav */
+.xtx-main-nav {
+    height: 130px;
+    padding-top: 30px;
+    /* 自动内减 */
+    box-sizing: border-box;
+    /* background-color: pink; */
+}
+
+.xtx-main-nav .logo {
+    width: 207px;
+    height: 70px;
+    margin-left: 25px;
+    /* background-color: red; */
+}
+
+.xtx-main-nav .logo a {
+    display: block;
+    height: 70px;
+    background: url(../images/logo.png);
+    background-size: 100% 100%;
+    font-size: 0;
+}
+
+.xtx-main-nav nav {
+    margin-left: 40px;
+}
+
+.xtx-main-nav nav li {
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 48px;
+}
+
+.xtx-main-nav nav li a:hover {
+    color: #27ba9b;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.xtx-main-nav .search {
+    position: relative;
+    width: 172px;
+    height: 30px;
+    margin-top: 24px;
+    margin-left: 34px;
+    background-color: orange;
+}
+
+.xtx-main-nav .search::before {
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    /* background-color: red; */
+    background: url('../images/sprites.png') -80px -70px;
+
+}
+
+.xtx-main-nav .search input {
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+    padding-left: 31px;
+    line-height: 0px;
+}
+
+.xtx-main-nav .cart {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    margin-top: 28px;
+    margin-left: 15px;
+    /* background-color: skyblue; */
+    background: url('../images/sprites.png') -120px -70px;
+}
+
+.xtx-main-nav .cart span {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 20px;
+    height: 14px;
+    background-color: red;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+}
+
+
+
+/* --------------底部模块：xtx-contact */
+.xtx-contact {
+    height: 302px;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.xtx-contact .container {
+    height: 302px;
+    padding-top: 70px;
+    /* 自动内减 */
+    box-sizing: border-box;
+    /* ps */
+    /* background-color: green; */
+}
+
+.xtx-contact .container dl {
+    float: left;
+    width: 25%;
+    height: 192px;
+    /* ps */
+    /* background-color: skyblue; */
+    text-align: center;
+    line-height: 1;
+}
+
+.xtx-contact .container dt {
+    height: 51px;
+    margin-top: 8px;
+    color: #999999;
+}
+
+/* 将dd统一设置为行内块元素 */
+.xtx-contact .container dd {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ----------------客户服务部分 */
+.xtx-contact .customer dd {
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eeeeee;
+    color: #999999;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.xtx-contact .customer .chat {
+    margin-right: 6px;
+}
+
+.xtx-contact .chat::before {
+    content: "";
+    display: block;
+    width: 29px;
+    height: 27px;
+    margin: 23px auto 8px;
+    background: url('../images/sprites.png') -205px -70px;
+}
+
+.xtx-contact .chat:hover::before {
+    background-position: -250px -70px;
+}
+
+.xtx-contact .feedback::before {
+    content: "";
+    display: block;
+    width: 29px;
+    height: 27px;
+    margin: 23px auto 8px;
+    background: url('../images/sprites.png') -300px -70px;
+
+}
+
+.xtx-contact .feedback:hover::before {
+    background-position: -350px -70px;
+}
+
+/* ----------------------关注我们部分 */
+.xtx-contact .follow dd {
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eeeeee;
+    color: #999999;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.xtx-contact .follow .weixin {
+    margin-right: 6px;
+}
+
+.xtx-contact .follow .weixin::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 29px;
+    margin: 23px auto 8px;
+    background: url('../images/sprites.png') -204px -14px;
+}
+
+.xtx-contact .follow .weixin:hover::before {
+    background-position: -249px -14px;
+}
+
+.xtx-contact .follow .weibo::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 29px;
+    margin: 23px auto 8px;
+    background: url('../images/sprites.png') -299px -14px;
+}
+
+.xtx-contact .follow .weibo:hover::before {
+    background-position: -349px -14px;
+}
+
+/* ----------------------下载APP部分 */
+.xtx-contact .download {
+    border-right: 1px solid #f4f4f4;
+    box-sizing: border-box;
+}
+
+.xtx-contact .download .qrcode {
+    width: 116px;
+    height: 116px;
+    border: 1px solid #eeeeee;
+    padding: 7px;
+    margin-right: 22px;
+    /* 自动内减 */
+    box-sizing: border-box;
+}
+
+.xtx-contact .download .qrcode img {
+    width: 100%;
+    height: 100%;
+}
+
+.xtx-contact .download .info {
+    font-size: 14px;
+    color: #999999;
+    text-align: left;
+}
+
+.xtx-contact .info p:nth-child(1) {
+    height: 22px;
+    margin-top: 13px;
+}
+
+.xtx-contact .info p:nth-child(2) {
+    height: 33px;
+}
+
+.xtx-contact .download .info a {
+    display: block;
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+
+/* ----------------------服务热线 */
+.xtx-contact .tel dt {
+    height: 74px;
+}
+
+.xtx-contact .hotline p:nth-child(1) {
+    height: 34px;
+    font-size: 22px;
+    color: #666666;
+}
+
+.xtx-contact .hotline p:nth-child(2) {
+    color: #999999;
+    font-size: 14px;
+}
