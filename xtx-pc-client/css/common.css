@@ -323,3 +323,77 @@
     color: #999999;
     font-size: 14px;
 }
+
+
+/* --------------宣传服务: xtx-service */
+.xtx-service {
+    height: 174px;
+    background-color: #333;
+}
+
+.xtx-service .container {
+    width: 1393px;
+    height: 173px;
+    border-bottom: 1px solid #434343;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.xtx-service .container a {
+    float: left;
+    width: 33.33%;
+    height: 173px;
+    /* ps */
+    /* background-color: skyblue; */
+
+    text-align: center;
+    line-height: 173px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.xtx-service .container a::before{
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    margin-right: 19px;
+    /* ps */
+    /* background-color: red; */
+    vertical-align: middle;
+    background: url('../images/sprites.png') 0 0;
+}
+
+.xtx-service .container a:nth-child(2)::before {
+    background-position: -130px 0;
+}
+
+.xtx-service .container a:nth-child(3)::before {
+    background-position: -65px 0;
+}
+
+
+/* --------------版权信息: xtx-copyright */
+.xtx-copyright {
+    height: 168px;
+    background-color: #333;
+}
+
+.xtx-copyright .container {
+    height: 168px;
+    padding-top: 41px;
+    box-sizing: border-box;
+    text-align: center;
+    /* ps */
+    /* background-color: pink; */
+    font-size: 14px;
+    color: #999;
+}
+
+.xtx-copyright .container a {
+    color: #999;
+}
+
+.xtx-copyright .container p:first-child{
+    height: 35px;
+}
